@@ -30,12 +30,12 @@ class Property_data(BaseModel) :
 
 
 @api.get("/")
-def server_status() :
+async def server_status() :
     return "Alive : Status Code = 200"
 
 
 @api.get("/predict")
-def input_data_format() :
+async def input_data_format() :
 
     data_expected_format = {   
                             "area": int,
@@ -60,7 +60,7 @@ def input_data_format() :
 
 
 @api.post("/predict", status_code = 200)
-def predict_price(data : Property_data = Body(embed = True)) :
+async def predict_price(data : Property_data = Body(embed = True)) :
 
     predict_price_result = {"prediction" : predict(preprocess(data.dict())), "status_code" : 200}
 
