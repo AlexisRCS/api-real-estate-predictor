@@ -14,4 +14,4 @@ Render link share in Usage section.
 The program can give some inside on the Belgium real estate price (area and position impacts), but keep in mind that's not a price advise
 for sellers or buyers.
 
-[title](https://api-demo-real-estate-predictor-av.onrender.com)
+[API Price Prediction Link](https://api-demo-real-estate-predictor-av.onrender.com)
