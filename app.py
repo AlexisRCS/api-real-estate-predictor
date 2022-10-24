@@ -37,7 +37,7 @@ async def server_status() :
 @api.get("/predict")
 async def input_data_format() :
 
-    data_expected_format = """{"area": int,"property_type": "APARTMENT" | "HOUSE","rooms_number": int,"zip_code": int,"land_area": int | None,"garden": bool | None, "garden_area": int | None,"equipped_kitchen": bool | None,"full_address": str | None,"swimming_pool": bool | None,"furnished": bool | None,"open_fire": bool | None,"terrace": bool | None,"terrace_area": int | None,"facades_number": int | None,"building_state": "NEW" | "GOOD" | "TO RENOVATE" | "JUST RENOVATED" | "TO REBUILD" | None}"""
+    data_expected_format = '''{"area": int,"property_type": "APARTMENT" | "HOUSE","rooms_number": int,"zip_code": int,"land_area": int | None,"garden": bool | None, "garden_area": int | None,"equipped_kitchen": bool | None,"full_address": str | None,"swimming_pool": bool | None,"furnished": bool | None,"open_fire": bool | None,"terrace": bool | None,"terrace_area": int | None,"facades_number": int | None,"building_state": "NEW" | "GOOD" | "TO RENOVATE" | "JUST RENOVATED" | "TO REBUILD" | None}'''
     
     return  str(data_expected_format)
 
