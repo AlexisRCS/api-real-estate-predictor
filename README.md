@@ -3,7 +3,7 @@
 ## Description
 The repository containt all the files and script necessary in order to predict
 Belgium real estate price. the Model was train on data scraped from Immoweb and these data
-are synthetise in 3 json files. The app.py file execute the main script and generate a http interface frame by fastapi.
+are synthetise in 3 json files. The app.py file execute the main script and generate a http interface framed by fastapi.
 Then to make it avaible to everyone, this script is transform in Docker format and host on Render.
 
 ## Installation
