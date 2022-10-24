@@ -89,7 +89,7 @@ def preprocess(property_data) :
     property_data_preprocessed["facades_number"] = property_data["facades_number"]
 
 
-    if property_data["building_state"] in ["NEW","GOOD","JUST RENOVATED"] :
+    if str(property_data["building_state"]) in ["NEW","GOOD","JUST RENOVATED"] :
         property_data_preprocessed["building_state"] = 1
     else :
         property_data_preprocessed["building_state"] = 0
