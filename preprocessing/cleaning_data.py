@@ -32,7 +32,7 @@ def preprocess(property_data) :
     if property_data["area"] > 24 and property_data["area"] < 1001 :
         property_data_preprocessed["area"] = property_data["area"]
     else : 
-        raise HTTPException(status_code = 400 , detail = "the area criteria must be between 25 m² and 1000 m²")
+        raise HTTPException(status_code = 422 , detail = "the area criteria must be between 25 m² and 1000 m²")
 
 
     if property_data["property_type"] == "APARTMENT" :
@@ -44,7 +44,7 @@ def preprocess(property_data) :
     if property_data["rooms_number"] > 0 and property_data["rooms_number"] < 11 :
         property_data_preprocessed["rooms_number"] = property_data["rooms_number"]
     else : 
-        raise HTTPException(status_code = 400 , detail = "the rooms number criteria must be between 1 and 10 ")
+        raise HTTPException(status_code = 422 , detail = "the rooms number criteria must be between 1 and 10 ")
     
 
     if property_data["zip_code"] > 999 & property_data["zip_code"] < 10000 :
@@ -54,7 +54,7 @@ def preprocess(property_data) :
                 break
         property_data_preprocessed["localisation_score"] = localisation_score
     else :
-        raise HTTPException(status_code = 400 , detail = "the zip code criteria must be a real Belgium zip code")
+        raise HTTPException(status_code = 422 , detail = "the zip code criteria must be a real Belgium zip code")
     
 
     property_data_preprocessed["land_area"] = property_data["land_area"]
