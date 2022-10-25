@@ -11,7 +11,7 @@ You need to install python 3.10 and all the package define in the requirements.t
 Render link share in the Usage section.
 
 ## Usage
-The program can give some inside on the Belgium real estate price (area and position impacts), but keep in mind that's not a price advise
+The program can give some insight on the Belgium real estate price (area and position impacts), but keep in mind that's not a price advise
 for sellers or buyers.
 
 [API Price Prediction Link](https://api-demo-real-estate-predictor-av.onrender.com)
